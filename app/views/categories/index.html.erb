@@ -13,7 +13,7 @@
         <% @categories.each do |category| %>
           <header>
             <p class="date"><%= category.created_at.strftime('%A, %b, %d') %></p>
-            <h1 class="post_title"><%= category.title.capitalize %></h1>
+            <h1 class="post_title"><%= category.title %></h1>
           </header>
             <hr>
         <% end %>
