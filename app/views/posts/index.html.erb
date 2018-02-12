@@ -11,7 +11,7 @@
         <% @posts.each do |post| %>
           <header>
             <p class="date"><%= post.created_at.strftime('%A, %b, %d') %></p>
-            <h1 class = "post_title"><%= post.title.capitalize %></h1>
+            <h1 class = "post_title"><%= post.title %></h1>
             <h5 class = "content"><%= truncate post.content, length: 50 %></h5>
             <h6 class = "buttons"><%= link_to "Read More", post , class: "btn btn primary " %></h6>
           </header>
