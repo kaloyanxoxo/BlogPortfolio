@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kaloyan Kostadinov - Junoir Ruby on Rails Developer</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    	<link href="//fonts.googleapis.com/css?family=Rammetto One:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <header class = "header">
+      <nav>
+        <ul>
+          <li class = "navbar_element"><%= link_to "Home", home_index_path, class: "navbar_elements" %></li>
+          <li class = "navbar_element"><%= link_to "Posts", posts_path, class: "navbar_elements" %></li>
+          <li class = "navbar_element"><%= link_to "Categories", categories_path, class: "navbar_elements" %></li>
+          <li class = "navbar_right_element" ><%= link_to "About", abouts_path, class: "navbar_elements" %></li>
+        </ul>
+      </nav>
+      <h1 id="page_title">Welcome to ProgrammersBlog</h1>
+    </header>
+    <% if notice %>
+        <p class = "notice"><%= notice %></p>
+    <% elsif alert %>
+        <p class = "alert"><%= alert %></p>   
+    <% end %>
+  <body class = "clearfix">  	
+    <div class = "wrapper">
+      <%= yield %>
+    </div>
+  </body>
+  <br>
+    <p class = "pre_footer_decoration_before">```</p>
+      <p class = "pre_footer">< Programming is not a job - it's a lifestyle! ></p>
+    <p class = "pre_footer_decoration_after">```</p>
+  <footer>
+    <%= render 'partials/footer' %>
+  </footer>
+</html>

@@ -1,0 +1,11 @@
+<h2 class = "posts_header">These are all the latest posts</h2>
+<hr>
+<% @posts.each do |post| %>
+	<p class="date"><%= post.created_at.strftime('%A, %b, %d') %></p>			
+	<h4 class = "post_title"><%= post.title.capitalize %></h4>
+	<h5 class = "content"><%= truncate post.content, length: 50 %></h5>
+    <h6 class = "buttons read_more"><%= link_to "Read More", post , class: "btn btn primary " %></h6>
+	<br>
+	<hr>
+	<br>
+<% end %>

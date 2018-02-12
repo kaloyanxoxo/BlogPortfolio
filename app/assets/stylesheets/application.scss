@@ -1,0 +1,244 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "normalize";
+
+$dark: #424652;
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #D8D8D8;
+	font-family: 'Rammetto One', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6, p, ul, li{
+	color: $dark;
+}
+h1 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+h2{
+	font-size: 2rem;
+	text-align: center;
+}
+h3{
+	font-size:1,75rem;
+	text-align: center;
+}
+h4{
+	font-size:1,375rem;
+	text-align: center;
+}
+h5{
+	font-size:1,25rem;
+	text-align: center;
+}
+h6{
+	font-size:1rem;
+	text-align: center;
+}
+.date{
+	font-size: 1.1em;
+	font-weight: 400;
+	text-align: center;
+	color: white;
+}
+
+.wrapper{
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+.notice, .alert {
+	text-align: center;
+	padding: 1em 0;
+	border-bottom: 1px solid black;
+}
+
+#page_title{
+	text-align: center;
+	padding: 2.5em 0;
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #808080;
+}
+.header{
+	background: image-url('bg_header.jpg') no-repeat center;
+	position: relative;
+	border-radius: 0.3em;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+}
+ul, li{
+		display: block;
+		color: $dark;
+		text-align: center;
+		padding: 1em 2em 1em 2em;
+		text-decoration: none;
+		.navbar_element{
+			float: left;
+		}
+		.navbar_right_element{
+			float:right;
+		}
+}	
+.navbar_elements{
+	color: $dark;
+	&:hover{
+		color: #A9A9A9;
+		text-decoration: none;
+		border: none;
+	}
+}
+hr{
+	border: 1px solid black;
+	border-radius: 3em;
+	width: 4em;
+	color: gray;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.posts_header{
+	font-weight: 700;
+	font-size: 2em;
+	padding-top: 1.5em;
+	padding-bottom: .7em;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
+	color: #fffff8 ;
+}
+.name{
+	font-size: .9em;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding:1.2em;
+	margin-left: 5em;
+	color: #808080;
+	&:hover{
+		color: white;
+		text-decoration: none;
+	}
+}
+.footer{
+	border-top: 2px solid $dark;
+	padding-top:4.5em;
+}
+.left_side{
+	padding: 0 4em;
+}
+//Трябва да го прегледам като има интернет!!!!!!
+//Снимката за бекграунда от телефона 
+.right_side{
+	float: left;
+	padding: 1em 4em 0 5.7em;
+	a{
+		padding: 0 1em 2em 1em;
+		font-size: 1.3em;
+		color: rgb(224, 255, 255);
+		&:hover{
+			color: #00BFFF;
+			-webkit-stroke-width: 5.3px;
+		    -webkit-stroke-color: #FFFFFF;
+		    -webkit-fill-color: #FFFFFF;
+		     text-shadow: 1px 0px 20px #00BFFF;
+		}
+	}
+}
+.pre_footer{
+	font-weight: 700;
+	font-size: 1.3em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: .5em auto;
+	color: #640620;
+	font-style: italic;
+}
+.buttons{
+	text-align: center;
+}
+.button{
+	font-size: .8em;
+}
+.pre_footer_decoration_before{
+	font-size: 2.5em;
+	font-weight: 720;
+	text-align: center;
+	padding-top:2.6em;
+	color: $dark;
+}
+.pre_footer_decoration_after{
+	font-size: 2.5em;
+	font-weight:720;
+	text-align: center;
+	color: $dark;
+}
+.post_title{
+	font-style: italic;
+	font-weight: 500;
+	text-decoration: none;
+	color: #888888;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	 &:hover{
+	 	text-decoration: none;
+	 }
+}
+.copyright{
+	text-align: center;
+	font-size: .9em;
+	margin-top: 4em;
+}
+.content{
+	text-align: center;
+	padding-top: 1em;
+}
+.read_more{
+	border:none;
+	font-size: .6em;
+	&:hover{
+		text-decoration: none;
+		color: #00BFFF; 
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
