@@ -1,5 +1,9 @@
 <h1>New Category</h1>
 
-<%= render 'form', category: @category %>
+<%= render 'form' %>
 
-<%= link_to 'Back', categories_path %>
+<div align="center" class = "form-group col-sm-10">
+	<small>
+		[ <%= link_to 'Dismiss and go back', categories_path %> ]
+	</small>
+</div>

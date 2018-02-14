@@ -150,8 +150,6 @@ hr{
 .left_side{
 	padding: 0 4em;
 }
-//Трябва да го прегледам като има интернет!!!!!!
-//Снимката за бекграунда от телефона 
 .right_side{
 	float: left;
 	padding: 1em 4em 0 5.7em;
@@ -227,10 +225,36 @@ hr{
 		color: #00BFFF; 
 	}
 }
-
-
-
-
+.field{
+	margin: 0 auto;
+	text-align:center;
+	padding-top:1em;
+}
+.actions{
+	padding-top:1em;
+}
+.text_field{
+	border-radius: .4em;
+	border: 1px solid $dark;
+}
+.show{
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 3em;
+	strong{
+		font-size:2em;
+	}
+	h3{
+		color: $dark;
+		font-size: 4em;
+	}
+}
+.content_field{
+	padding-top: 3em;
+	width: 50%;
+	margin: 0 auto;
+	
+}
 
 
 

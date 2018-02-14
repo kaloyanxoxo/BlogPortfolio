@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @category.title %>
+<p class = "show">
+  <strong>Title:</strong><br>
+  <h3><%= @category.title %></h3>
 </p>
 
+<div class = "buttons">
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+</div>
