@@ -1,9 +1,8 @@
-<p class = "show">
-  <strong>Title:</strong><br>
-  <h3><%= @category.title %></h3>
-</p>
+<header>
+	<p class="date"><%= @category.created_at.strftime('%A, %b, %d') %></p>
+	<h1><%= @category.title %></h1>
+</header>
 
 <div class = "buttons">
-<%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
 </div>
