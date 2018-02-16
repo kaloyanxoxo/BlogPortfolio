@@ -23,6 +23,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
       if @post.save
+        flash[:notice] = "Post was succesfully created"
         redirect_to @post
       else
         render 'new'
@@ -32,7 +33,8 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
-      if @post.update post_params
+      if @post.update(post_params)
+        flash[:notice] = "Post was succesfully updated"        
         redirect_to @post
       else
         redirect_to 'edit'
@@ -43,10 +45,10 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-    respond_to do |format|
-      format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    if @post.destroy
+      flash[:notice] = "Post was succesfully deleted"
+      redirect_to posts_path
+    end      
   end
 
   private
