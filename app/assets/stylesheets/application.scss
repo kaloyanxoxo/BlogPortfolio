@@ -9,7 +9,7 @@ $dark: #424652;
 }
 
 body{
-	background-color: #D8D8D8;
+	background-color: #f2f2f2;
 	font-family: 'Rammetto One', sans-serif;
 }
 .container{
@@ -46,10 +46,10 @@ h6{
 	text-align: center;
 }
 .date{
-	font-size: 1.1em;
-	font-weight: 400;
+	font-size: 1em;
+	font-weight: normal; 
 	text-align: center;
-	color: white;
+	color: #009900;
 }
 
 .wrapper{
@@ -135,7 +135,7 @@ hr{
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: underline;
-	color: #fffff8 ;
+	color: #333333 ;
 }
 .name{
 	font-size: .9em;
@@ -162,13 +162,13 @@ hr{
 	a{
 		padding: 0 1em 2em 1em;
 		font-size: 1.3em;
-		color: rgb(224, 255, 255);
+		color: rgb(109, 231, 231);
 		&:hover{
-			color: #00BFFF;
+			color: rgb(0, 204, 255);
 			-webkit-stroke-width: 5.3px;
 		    -webkit-stroke-color: #FFFFFF;
 		    -webkit-fill-color: #FFFFFF;
-		     text-shadow: 1px 0px 20px #00BFFF;
+		     text-shadow: 1px 0px 20px rgb(0, 204, 255);
 		}
 	}
 }
@@ -179,7 +179,7 @@ hr{
 	text-transform: uppercase;
 	text-align: center;
 	padding: .5em auto;
-	color: #640620;
+	color: #8e1300;
 	font-style: italic;
 }
 .buttons{
@@ -205,7 +205,7 @@ hr{
 	font-style: italic;
 	font-weight: 500;
 	text-decoration: none;
-	color: #888888;
+	color: #333333;
 	font-size: 1.4em;
 	text-transform: uppercase;
 	 &:hover{
@@ -216,12 +216,6 @@ hr{
 	text-align: center;
 	font-size: .9em;
 	margin-top: 4em;
-}
-.content{
-	padding-top: 3em;
-	width: 50%;
-	text-align: center;
-	margin: 0 auto;
 }
 .read_more{
 	border:none;
@@ -259,18 +253,7 @@ hr{
 	padding-top: 3em;
 	width: 50%;
 	margin: 0 auto;
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.jumbotron{
+	background-color: #d9d9d9;
+}
