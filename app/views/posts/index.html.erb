@@ -9,21 +9,19 @@
     </tr>
   </thead>
         <% @posts.each do |post| %>
+        <div class="well col-xs-8 col-xs-offset-2">
           <header>
             <p class="date"><%= post.created_at.strftime('%A, %b, %d') %></p>
             <h1 class = "post_title"><%= post.title %></h1>
             <h5 class = "content"><%= truncate post.content, length: 50 %></h5>
             <h6 class = "buttons"><%= link_to "Read More", post , class: "btn btn primary " %></h6>
           </header>
-          <div class = "buttons">
-            <%= link_to 'Show', post, class: "btn btn-primary button" %> 
-            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary button" %> 
-          </div>
+        </div>
             <hr>
         <% end %>
 </table>
 
 <br>
-<div class = "buttons">
-  <%= link_to 'New Post', new_post_path, class: "btn btn-success" %>
+<div class = "col-xs-8 col-xs-offset-2 buttons">
+  <%= link_to 'New Post', new_post_path, class: "btn btn-success btn-lg" %>
 </div>
