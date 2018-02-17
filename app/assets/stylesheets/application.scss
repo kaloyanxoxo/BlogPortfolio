@@ -82,7 +82,7 @@ h6{
 }
 .header{
 	background: image-url('bg_header.jpg') no-repeat center;
-	box-shadow: 10px 7px 14px;
+	box-shadow: 10px 4px 14px;
 	position: relative;
 	border-radius: 0.3em;
     background-size: 100% 100%;
@@ -90,12 +90,12 @@ h6{
 }
 
 
-ul{
+.navbar-ul{
 	list-style-type: none;
 	margin: 0;
 	overflow: hidden;
 }
-ul, li{
+.navbar-ul, #navbar-li{
 		display: block;
 		color: $dark;
 		text-align: center;

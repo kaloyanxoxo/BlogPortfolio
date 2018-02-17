@@ -28,7 +28,7 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
       if @category.save(category_params)
-        flash[:notice] = "Category was successfully created."
+        flash[:success] = "Category was successfully created."
         redirect_to @category
       else
         render 'new'
@@ -40,7 +40,7 @@ class CategoriesController < ApplicationController
   # PATCH/PUT /categories/1.json
   def update
     if @category.update(category_params)
-      flash[:notice] = "Category was successfully updated."
+      flash[:success] = "Category was successfully updated."
       redirect_to @category
   end
 
@@ -49,7 +49,7 @@ class CategoriesController < ApplicationController
   def destroy
     @category.destroy
      if @category.destroy
-      flash[:notice] = "Category was succesfully deleted."
+      flash[:danger] = "Category was succesfully deleted."
       redirect_to categories_path
     end
   end

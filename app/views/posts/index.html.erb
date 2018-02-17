@@ -16,9 +16,8 @@
             <h6 class = "buttons"><%= link_to "Read More", post , class: "btn btn primary " %></h6>
           </header>
           <div class = "buttons">
-            <%= link_to 'Show', post, class: "btn btn-primary button" %> |
-            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary button" %> |
-            <%= link_to 'Destroy', post, class: "btn btn-danger button", method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Show', post, class: "btn btn-primary button" %> 
+            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-primary button" %> 
           </div>
             <hr>
         <% end %>

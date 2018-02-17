@@ -1,14 +1,6 @@
-  <% if @category.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+<%= render  "partials/errors", obj: @category %>
 
-      <ul>
-      <% @category.errors.full_messages.each do |message| %>
-        <li><%= "-" + message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+
 <div class="row">
   <div class="col-xs-12">
     <%= form_for(@category, :html => {class: "form-horizontal", role: "form"}) do |form| %>
@@ -20,6 +12,7 @@
           <%= form.text_field :title, placeholder: "Enter Category Name" , class: "form-control" %>
         </div>
       </div>
+      <br>
       <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
           <%= form.submit class: "btn btn-primary" %>

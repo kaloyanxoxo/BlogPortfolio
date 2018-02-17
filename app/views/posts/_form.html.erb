@@ -1,13 +1,4 @@
-<% if @post.errors.any? %>
-  <div id="error_explanation">
-    <h4><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h4>
-    <ul>
-    <% @post.errors.full_messages.each do |message| %>
-      <li><%= "-" + message %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
+<%= render  "partials/errors", obj: @post %>
 
 <div class="row">
   <div class="col-xs-12">

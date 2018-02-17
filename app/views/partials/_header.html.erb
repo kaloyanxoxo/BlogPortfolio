@@ -1,9 +1,9 @@
 <nav>
-    <ul>
-        <li class = "navbar_element"><%= link_to "Home", home_index_path, class: "navbar_elements" %></li>
-        <li class = "navbar_element"><%= link_to "Posts", posts_path, class: "navbar_elements" %></li>
-        <li class = "navbar_element"><%= link_to "Categories", categories_path, class: "navbar_elements" %></li>
-        <li class = "navbar_right_element" ><%= link_to "About", abouts_path, class: "navbar_elements" %></li>
+    <ul class="navbar-ul">
+        <li class = "navbar_element" id="navbar-li"><%= link_to "Home", home_index_path, class: "navbar_elements" %></li>
+        <li class = "navbar_element" id="navbar-li"><%= link_to "Posts", posts_path, class: "navbar_elements" %></li>
+        <li class = "navbar_element" id="navbar-li"><%= link_to "Categories", categories_path, class: "navbar_elements" %></li>
+        <li class = "navbar_right_element" id="navbar-li" ><%= link_to "About", abouts_path, class: "navbar_elements" %></li>
     </ul>
 </nav>
 <h1 id="page_title">Welcome to AlphaBlog</h1>
@@ -16,7 +16,7 @@
 </div>
 <div align="center">
     <br>
-    <div class="btn btn-success btn-lg>
-        <%= link_to  "Sign Up", "#" %>
+    <div>
+        <%= link_to  "Sign Up", "#" , class: "btn btn-success btn-lg" %>
     </div>
 </div>

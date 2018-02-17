@@ -7,5 +7,6 @@
 <br>
 <br>
 <div class = "buttons">
-<%= link_to 'Back', posts_path, class: "btn btn-primary" %>
+	<%= link_to 'Back', posts_path, class: "btn btn-primary" %>
+	<%= link_to 'Destroy', post_path(@post), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>

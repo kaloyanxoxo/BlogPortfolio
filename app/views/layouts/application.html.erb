@@ -12,11 +12,9 @@
   <header class = "header">
       <%= render 'partials/header' %>
   </header>
-        <% if notice %>
-            <p class = "notice"><%= notice %></p>
-        <% elsif alert %>
-            <p class = "alert"><%= alert %></p>   
-        <% end %>
+  <% if flash.any? %>
+    <%= render  "partials/messages" %>
+    <% end %>
   <body class = "clearfix">  	
       <div class = "container">
         <%= yield %>
