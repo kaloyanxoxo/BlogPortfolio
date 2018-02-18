@@ -11,15 +11,19 @@
 
     </thead>
         <% @categories.each do |category| %>
+        <div class="well col-xs-8 col-xs-offset-2">
           <header>
             <p class="date"><%= category.created_at.strftime('%A, %b, %d') %></p>
             <h1 class="post_title"><%= category.title %></h1>
           </header>
+        </div>
             <hr>
         <% end %>
 </table>
 
 <br>
-<div class = "buttons">
-  <%= link_to 'New Category', new_category_path, class: "btn btn-success" %>
+<div class="wel col-xs-8 col-xs-offset-2">
+  <div class = "buttons">
+    <%= link_to 'New Category', new_category_path, class: "btn btn-success" %>
+  </div>
 </div>
