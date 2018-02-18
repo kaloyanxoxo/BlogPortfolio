@@ -16,6 +16,12 @@
             <h5 class = "content"><%= truncate post.content, length: 50 %></h5>
             <h6 class = "buttons"><%= link_to "Read More", post , class: "btn btn primary " %></h6>
           </header>
+          <div class="post-info-time-user">
+            <small>
+              Created by:<%= post.user.username if post.user %> |  
+              Last update:<%= time_ago_in_words(post.updated_at) %> 
+            </small>
+          </div>
         </div>
             <hr>
         <% end %>

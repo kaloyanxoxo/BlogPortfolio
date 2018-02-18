@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :abouts, only: [:index]
   resources :categories 
   resources :posts

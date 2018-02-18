@@ -2,8 +2,13 @@
 <h2 aling="center" class="text-capitalize"><%= @post.title %></h2>
 <div class="well col-xs-8 col-xs-offset-2">
 	<h4 class="center description"><strong>Content:</strong></h4>	
-	<hr class="hr-show-page">
+	<hr>
 	<%= simple_format(@post.content) %>
+	<div class="post-info-time-user">
+		<small align="center">
+			Created by:<%= @post.user.username if @post.user %>  
+		</small>
+	</div>
 	<div class = "post-actions">
 		<%= link_to  "Edit", edit_post_path(@post), class: "btn btn-xs btn-primary" %>
 		<%= link_to "Destroy", post_path(@post), class: "btn btn-xs btn-danger",
