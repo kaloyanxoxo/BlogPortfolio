@@ -5,6 +5,12 @@
 <%= render 'partials/posts', obj: @posts %>
 
 <br>
-<div class = "col-xs-8 col-xs-offset-2 buttons">
-  <%= link_to 'New Post', new_post_path, class: "btn btn-success btn-lg" %>
+<% if logged_in? %>
+  <div class = "col-xs-8 col-xs-offset-2 buttons">
+    <%= link_to 'New Post', new_post_path, class: "btn btn-success btn-lg" %>
+  </div>
+<% end %>
+
+<div align="center">
+  <%= will_paginate %>
 </div>

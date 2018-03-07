@@ -6,4 +6,7 @@
     </div>
 </div>
     <h4 align="center"><%= @user.username %>'s posts</h4>
-    <%= render  "partials/posts", obj: @user.posts %>
+    <%= render  "partials/posts", obj: @user_posts %>
+<div align="center">
+    <%= will_paginate @user_posts%>
+</div>    

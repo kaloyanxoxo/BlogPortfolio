@@ -6,6 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 
+
+
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
+gem 'bootstrap-will_paginate', '~> 1.0'
+
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'

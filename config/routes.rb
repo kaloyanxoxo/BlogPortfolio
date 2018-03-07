@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   resources :abouts, only: [:index]
   resources :categories 
   resources :posts
+
+get '/login', to: 'sessions#new'
+post '/login', to: 'sessions#create'
+delete '/logout', to: 'sessions#destroy'
   
 get '/home/index'
 root 'home#index'
