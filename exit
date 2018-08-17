@@ -1,0 +1,50 @@
+=> [[32m#<Post:0x00005642c3b27418[0m
+  id: [1;34m1[0m,
+  title: [31m[1;31m"[0m[31mASDASDASDa[1;31m"[0m[31m[0m,
+  content: [31m[1;31m"[0m[31masdasdqoiwdjoinoansdjubqaidboaisasdasdasdasdasdasdddddddddddddddddddddddddddddddd[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mTue[0m, [1;34m07[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m12[0m:[1;34m45[0m:[1;34m19[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mTue[0m, [1;34m07[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m12[0m:[1;34m45[0m:[1;34m19[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m1[0m,
+  category_id: [1;36mnil[0m[32m>[0m,
+ [32m#<Post:0x00005642c3b252a8[0m
+  id: [1;34m2[0m,
+  title: [31m[1;31m"[0m[31mLorem Ipsum Label[1;31m"[0m[31m[0m,
+  content:
+   [31m[1;31m"[0m[31m Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mWed[0m, [1;34m08[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m10[0m:[1;34m43[0m:[1;34m44[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mWed[0m, [1;34m08[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m10[0m:[1;34m43[0m:[1;34m44[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m1[0m,
+  category_id: [1;36mnil[0m[32m>[0m,
+ [32m#<Post:0x00005642c3b25168[0m
+  id: [1;34m3[0m,
+  title: [31m[1;31m"[0m[31mNew post post post [1;31m"[0m[31m[0m,
+  content: [31m[1;31m"[0m[31mLorem ipsum is the ipsum of the lorem, where the lorem is the ipsum's lorem [1;31m"[0m[31m[0m,
+  created_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m09[0m:[1;34m39[0m:[1;34m08[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m09[0m:[1;34m39[0m:[1;34m08[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m2[0m,
+  category_id: [1;36mnil[0m[32m>[0m,
+ [32m#<Post:0x00005642c3b25028[0m
+  id: [1;34m4[0m,
+  title: [31m[1;31m"[0m[31mAgain new post post[1;31m"[0m[31m[0m,
+  content:
+   [31m[1;31m"[0m[31masdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasdaasdasdasdasda[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m09[0m:[1;34m40[0m:[1;34m49[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m09[0m:[1;34m40[0m:[1;34m49[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m2[0m,
+  category_id: [1;36mnil[0m[32m>[0m,
+ [32m#<Post:0x00005642c3b24ee8[0m
+  id: [1;34m5[0m,
+  title: [31m[1;31m"[0m[31mTITLE TITLE TITLE TITLE[1;31m"[0m[31m[0m,
+  content: [31m[1;31m"[0m[31mCONTENT CONTENT CONTENT CONTENT[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m14[0m:[1;34m08[0m:[1;34m01[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m14[0m:[1;34m08[0m:[1;34m01[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m1[0m,
+  category_id: [1;34m1[0m[32m>[0m,
+ [32m#<Post:0x00005642c3b24da8[0m
+  id: [1;34m6[0m,
+  title: [31m[1;31m"[0m[31mTITLETITLETITLETITLETITLETITLE[1;31m"[0m[31m[0m,
+  content: [31m[1;31m"[0m[31mcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m15[0m:[1;34m02[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mWed[0m, [1;34m15[0m [1;34;4mAug[0m [1;34m2018[0m [1;34m15[0m:[1;34m02[0m:[1;34m26[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  user_id: [1;34m2[0m,
+  category_id: [1;34m2[0m[32m>[0m]

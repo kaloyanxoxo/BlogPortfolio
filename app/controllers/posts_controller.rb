@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :require_user, except: [:index, :show]
+  before_action :require_same_user, only: [:edit, :destroy]
 
   def index
     @posts = Post.paginate(page: params[:page], per_page: 5).order("created_at desc") 
@@ -21,27 +23,26 @@ class PostsController < ApplicationController
  
   def create
     @post = Post.new(post_params)
+    @post.user = current_user
+    @post.update_attributes(:category_id => params[:post][:category_id])
+    debugger
       if @post.save
         flash[:success] = "Post was succesfully created"
-        redirect_to posts_path(@post)
+        redirect_to post_path(@post)
       else
         render 'new'
       end
   end
 
-  # PATCH/PUT /posts/1
-  # PATCH/PUT /posts/1.json
   def update
       if @post.update(post_params)
         flash[:success] = "Post was succesfully updated"        
-        redirect_to @post
+        redirect_to post_path @post
       else
         redirect_to 'edit'
       end
   end
 
-  # DELETE /posts/1
-  # DELETE /posts/1.json
   def destroy
     if @post.destroy
       flash[:danger] = "Post was succesfully deleted"
@@ -50,13 +51,19 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
     def find_post
       @post = Post.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :user_id, :category_id)
+    end
+
+    def require_same_user
+      if current_user != @post.user and !current_user.admin?
+        flash[:danger] = "You can only edit your posts!"
+        redirect_to root_path
+      end
     end
 end

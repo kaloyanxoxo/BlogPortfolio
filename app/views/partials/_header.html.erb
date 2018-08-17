@@ -1,4 +1,6 @@
-<nav>
+<label for="show-menu" class="show-menu">Show Menu</label>
+<input type="checkbox" id="show-menu" role="button">
+<nav id = "menu">
     <ul class="navbar-ul">
         <li class = "navbar_element" id="navbar-li"><%= link_to "Home", root_path, class: "navbar_elements" %></li>
         <li class = "navbar_element" id="navbar-li"><%= link_to "Posts", posts_path, class: "navbar_elements" %></li>
@@ -10,6 +12,9 @@
             <li class = "navbar_right_element" id="navbar-li"><%= link_to "Log In", login_path, class: "navbar_elements" %></li>
         <% end %>
         <li class = "navbar_right_element" id="navbar-li" ><%= link_to "About", abouts_path, class: "navbar_elements" %></li>
+            <% if current_user.admin? %>
+                <li class="navbar_right_element" id="navbar-li"><small class = "navbar_elements admin">Logged in <br/>as ADMIN</small></li>
+            <% end %>
     </ul>
 </nav>
 <h1 id="page_title">Welcome to AlphaBlog</h1>
@@ -27,4 +32,11 @@
         <%= link_to  "Sign Up", signup_path , class: "btn btn-success btn-lg" %>
     </div>
 </div>
+<% else %>
+    <div align="center">
+        <p class="logged-in">
+            Enjoy all the posts! If you have an <br> interesting information - 
+            <storng><em>Feel free to share it</em></strong>
+        </p>
+    </div>
 <% end %>

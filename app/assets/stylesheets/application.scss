@@ -58,7 +58,7 @@ h6{
 
 .clearfix:before,
 .clearfix:after{
-	content: " ";
+	content: ' ';
 	display: table;
 }
 
@@ -99,7 +99,7 @@ h6{
 		display: block;
 		color: $dark;
 		text-align: center;
-		padding: 1em 2em 1em 2em;
+		padding: 1em 1em 1em 1em;
 		text-decoration: none;
 		.navbar_element{
 			float: left;
@@ -114,6 +114,61 @@ h6{
 		color: #A9A9A9;
 		text-decoration: none;
 		border: none;
+	}
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+	display: none;
+	border: none;
+}
+
+
+/*Hide checkbox*/
+input[type=checkbox]{
+	display: none;
+	width: 100%;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+	display: block;
+	position: absolute;
+}
+
+@media screen and (max-width : 760px){
+	nav {
+		position: static;
+		display: none;
+	}
+	#menu {
+		z-index: 100;
+		background: #64646491;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	.show-menu {
+        display:block;
+	}
+	.navbar_elements{
+		color: #fff;
+	}
+	nav .admin{
+		display: none;
+	}
+	#navbar-li{
+		padding:1em 2em 1em 2em;
 	}
 }
 hr{
@@ -162,9 +217,9 @@ hr{
 	a{
 		padding: 0 1em 2em 1em;
 		font-size: 1.3em;
-		color: rgb(109, 231, 231);
-		&:hover{
-			color: rgb(0, 204, 255);
+		color: rgba(0, 153, 255, 0.878);
+			&:hover{
+			color: rgba(0, 153, 255, 0.878);
 			-webkit-stroke-width: 5.3px;
 		    -webkit-stroke-color: #FFFFFF;
 		    -webkit-fill-color: #FFFFFF;
@@ -273,5 +328,34 @@ hr{
 .listing{
 	li{
 		list-style: none;
+	}
+}
+.overflow-text p {
+	word-wrap: break-word;
+}
+.content{
+	text-align: center;
+	font-weight: 400;
+	line-height: 1.7em;
+	word-wrap: break-word;
+}
+
+.logged-in{
+	font-size: 1em;
+	color: rgba(61, 150, 134, 0.96);
+}
+
+.category-title {
+	text-decoration: underline;
+	font-size: 2.5em;
+}
+
+.admin {
+	font-size: .9em;
+	font-weight: 600;
+	font-style: italic;
+	color: rgb(130, 230, 248);
+	&:hover{
+		color: rgb(58, 163, 182);
 	}
 }

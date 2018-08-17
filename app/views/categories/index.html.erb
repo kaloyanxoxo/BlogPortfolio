@@ -14,10 +14,9 @@
         <div class="well col-xs-8 col-xs-offset-2">
           <header>
             <p class="date"><%= category.created_at.strftime('%A, %b, %d') %></p>
-            <h1 class="post_title"><%= category.title %></h1>
+            <h1 class="post_title"><%= link_to category.title, category_path(category) %></h1>
           </header>
         </div>
-            <hr>
         <% end %>
 </table>
 

@@ -11,6 +11,11 @@
               <li><strong><%= link_to user.username, user_path(user) %></li></strong>
               <li><%= user.email %></li>
               <li><small><%= pluralize(user.posts.count, "posts") if user.posts %></small></li>
+              <% if logged_in? && (current_user.admin? && current_user != user) %>
+                <li><%= link_to "Delete User", user_path(user), method: :delete, 
+                    data: { confirm: "Are you sure you want to delete this user and all user's articles?" },
+                    class: "btn btn-md btn-danger"%></li>  
+              <% end %>
             </div>
           </div>
         </div>
